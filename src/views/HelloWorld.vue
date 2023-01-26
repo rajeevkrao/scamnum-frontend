@@ -32,8 +32,6 @@ const data = ref(null)
 <template>
   <h1>{{ msg }}</h1>
 
-  <h1>{{ store.backend_uri }}</h1>
-
   <h3 v-for="num in data">+{{ num.cc }} {{ num.number }}</h3>
 
   <div class="card">
