@@ -1,17 +1,10 @@
 <script setup>
+import 'ant-design-vue/dist/antd.dark.css'; 
 import HelloWorld from './views/HelloWorld.vue'
-
-import { store } from './store';
+import Home from './views/Home.vue'
 </script>
 
 <template>
-
-  {{ store.count }}
-<!--   <div>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div> -->
   <router-view></router-view>
 </template>
 

@@ -4,11 +4,8 @@ import axios from 'axios'
 
 import { store } from '../store.js'
 
-console.log(import.meta.env.MONGO_USER)
-
 onMounted(()=>{
   axios.get(store.backend_uri+"api/getnums").then(res=>{
-    console.log("axios get")
     data.value = res.data
   })
   .catch(err=>{
